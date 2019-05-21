@@ -1,0 +1,67 @@
+---
+title: "Documentation"
+author: "JK"
+date: "5/14/2019"
+output: github_document
+---
+
+
+# finalproject
+```{r}
+Please write your initial proposal for your final project in this README document. What type of project is it? 
+
+- Package?
+    - data package
+    - analysis package
+- Shiny app? 
+- Something else?
+
+Where do you expect to find data? Do you need help finding data? What question will your project answer or purpose will it solve?
+
+STAT 360 Group Project Proposal
+```
+
+## Project Outline
+
+Our final project deliverable will be an R Shiny app that will allow the user to view an interactive map of the Twin Cities light rail public transportation grid. The application will use clustering parameters that will be used to generate the most efficient (defined in methodology) public transportation lines based on a chosen “train stop.” The train stops will be non-traditional stop locations that ideally consist of franchises of fast food restaurants, coffee shops, other stores, etc. The "train stop" functionality of the Shiny App will resemble Google's Maps service, so users will be able search for the map locations by simply typing the location or set of locations' name in the App.  This map is not intended to be the future direction of the Metro Transit organization, but rather will put into perspective the spread and reach of these "train stop" map locations. 
+
+
+## Data Collection
+
+Data collection will be self-contained with the app such that data will be collected from a Google Maps API based on the user's search criteria using the "googleway" R package. Each time a new location is searched in the app, new location data is collected. In order for the app to work optimally, we suggest that the user searches for franchises or location names with a large number of locations (ideally 60 or more) in the Twin Cities area. When we collect data from Google Maps, we collect up to 60 locations (3 pages of 20 locations). This number of location data points gives the user to graph multiple transit lines. 
+
+
+## Methodology
+
+Our methodology for creating the R Shiny App will consist of mainly five packages: Tidyverse to perform any data collection and manipulation, leaflet to visualize maps and graph transit routes of the twin cities area, googleway to collect the location data, geosphere to determine distances for our starting point to select location points, and Shiny to develop our application.
+
+To determine the transit routes, K-means clustering is used to select locations for the route to follow. K-means is a clustering technique that creates clusters based on minimizing the variation with each cluster. This serves to create clusters where the data points  within each cluster are the most homogeneous. In our application, the homogeneity of data points refers to locations being the most similar in terms of latitude and longitude (i.e. the closest to each other). Each cluster of data locations will be used to create a light rail train transit route. The number of transit routes (and thus the number of clusters) is determined by the app user. 
+
+
+
+
+
+
+
+## Mapping
+
+
+
+
+
+
+
+## Goals
+
+
+
+
+
+## App Instructions
+
+
+
+
+## Group Members
+
+Ryan Nelson, Peter Roessler-Caram, Michael Schatzel, Jimmy Kroll, and Trevor Tracy
