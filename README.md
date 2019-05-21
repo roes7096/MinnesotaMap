@@ -1,16 +1,8 @@
-# STAT 360 Group Project 
-### Ryan Nelson, Peter Roessler-Caram, Michael Schatzel, Jimmy Kroll, and Trevor Tracy
-### STAT 360 | Professor Amelia McNamara
-### 21 May 2019
-
+#Minnesota Map
  https://nels6906.shinyapps.io/minnie_map_app/
 
 
 # Documentation
-
-## Project Outline
-
-Our final project deliverable is an R Shiny app that allows the user to view an interactive map of the Twin Cities light rail public transportation grid. The application uses clustering parameters that generate the most efficient (defined in methodology) public transportation lines based on a chosen “train stop” word or phrase. The train stops will be non-traditional stop locations that ideally consist of franchises of fast food restaurants, coffee shops, other stores, or general locations like "Golf Courses" or "Parks" that serve as a set of locations under the general description. The "train stop" functionality of the Shiny App will resemble the Google Maps service, so users can search for the map locations by simply typing the location or set of locations' name in the app.  This map is not intended to be the future direction of the Metro Transit organization, but rather will put into perspective the spread and reach of these "train stop" map locations. 
 
 ## Data Collection
 
